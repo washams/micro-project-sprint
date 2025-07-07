@@ -1,0 +1,17 @@
+{
+  "name": "cli-todo-list",
+  "version": "1.0.0",
+  "description": "A simple CLI To-Do List application",
+  "main": "src/index.js",
+  "bin": {
+    "todolist": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
