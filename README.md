@@ -6,9 +6,10 @@ Week 2 Hands On Project
 A simple command-line To-Do List application that saves tasks to a JSON file.
 
 ## Features
-- Add tasks
-- List tasks
-- Remove tasks
+- Add tasks with optional due dates
+- List tasks with their due dates and statuses
+- Remove tasks by index
+- Update tasks (status or due date)
 
 ## Installation
 
@@ -59,6 +60,13 @@ Run the following commands to manage your tasks:
   node src/index.js update 1 status in-progress
   node src/index.js update 1 dueDate "2025-07-15"
   ```
+
+## Testing
+
+Run the following command to execute the test suite:
+```bash
+npm test
+```
 
 ## Contributing
 
