@@ -1,14 +1,11 @@
-const fs = require('fs');
-const path = require('path');
-
-const filePath = path.join(__dirname, '../tasks.json');
+const { readTasks, writeTasks, isValidIndex } = require('../utils/helpers');
 
 module.exports = {
   command: 'update <index> <field> <value>',
   describe: 'Update the status or due date of a task',
   handler: ({ index, field, value }) => {
-    const tasks = JSON.parse(fs.readFileSync(filePath, 'utf8') || '[]');
-    if (index > 0 && index <= tasks.length) {
+    const tasks = readTasks();
+    if (isValidIndex(index, tasks)) {
       const task = tasks[index - 1];
       if (field === 'status') {
         task.status = value;
@@ -20,7 +17,7 @@ module.exports = {
         console.log('Invalid field. Use "status" or "dueDate".');
         return;
       }
-      fs.writeFileSync(filePath, JSON.stringify(tasks, null, 2));
+      writeTasks(tasks);
     } else {
       console.log('Invalid index');
     }

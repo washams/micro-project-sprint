@@ -7,11 +7,15 @@
     "todolist": "src/index.js"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "npx jest"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
   }
 }

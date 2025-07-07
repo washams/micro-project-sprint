@@ -1,12 +1,7 @@
 [
   {
-    "task": "Take dog to groomer",
+    "task": "Sample Task",
     "status": "pending",
-    "dueDate": "2025-07-08"
-  },
-  {
-    "task": "Pick up groceries",
-    "status": "inProgress",
-    "dueDate": "2025-07-07"
+    "dueDate": "2025-07-10"
   }
 ]
