@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "task": "Take dog to groomer",
+    "status": "pending",
+    "dueDate": "2025-07-08"
+  },
+  {
+    "task": "Pick up groceries",
+    "status": "inProgress",
+    "dueDate": "2025-07-07"
+  }
+]
