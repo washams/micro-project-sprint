@@ -31,9 +31,13 @@ A simple command-line To-Do List application that saves tasks to a JSON file.
 
 Run the following commands to manage your tasks:
 
-- Add a task:
+- Add a task with an optional due date:
   ```bash
-  node src/index.js add "Your task here"
+  node src/index.js add "Your task here" "YYYY-MM-DD"
+  ```
+  Example:
+  ```bash
+  node src/index.js add "Finish project" "2025-07-10"
   ```
 
 - List all tasks:
@@ -44,6 +48,16 @@ Run the following commands to manage your tasks:
 - Remove a task by index:
   ```bash
   node src/index.js remove <index>
+  ```
+
+- Update a task's status or due date:
+  ```bash
+  node src/index.js update <index> <field> <value>
+  ```
+  Example:
+  ```bash
+  node src/index.js update 1 status in-progress
+  node src/index.js update 1 dueDate "2025-07-15"
   ```
 
 ## Contributing
